@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@import "./scrollbar.css";
+
+:root {
+  /* Primary colors */
+  --color-primary: #b45309;
+  /* amber-700 */
+  --color-primary-hover: #92400e;
+  /* amber-800 */
+  --color-primary-foreground: #ffffff;
+
+  /* Background colors */
+  --color-background: #f9fafb;
+  /* gray-50 */
+  --color-card: #ffffff;
+  --color-card-border: #e5e7eb;
+  /* gray-200 */
+
+  /* Text colors */
+  --color-text-primary: #1f2937;
+  /* gray-800 */
+  --color-text-secondary: #6b7280;
+  /* gray-500 */
+  --color-text-completed: #9ca3af;
+  /* gray-400 */
+
+  /* Status colors */
+  --color-success: #10b981;
+  /* green-500 */
+  --color-warning: #f59e0b;
+  /* yellow-500 */
+  --color-error: #ef4444;
+  /* red-500 */
+
+  /* Border and shadow */
+  --color-border: #e5e7eb;
+  /* gray-200 */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+  /* Scrollbar */
+  --color-scrollbar-track: #f1f1f1;
+  --color-scrollbar-thumb: var(--color-primary);
+  --color-scrollbar-thumb-hover: var(--color-primary-hover);
+
+  /* Border radius */
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.375rem;
+  --border-radius-lg: 0.5rem;
+  --border-radius-full: 9999px;
+}
+
+/* Utility classes for using theme variables with Tailwind */
+.bg-theme-primary {
+  background-color: var(--color-primary);
+}
+
+.text-theme-primary {
+  color: var(--color-primary);
+}
+
+.border-theme-primary {
+  border-color: var(--color-primary);
+}
+
+.hover\:bg-theme-primary-hover:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.text-theme-completed {
+  color: var(--color-text-completed);
+}
+
+.line-through-theme {
+  text-decoration: line-through;
+  color: var(--color-text-completed);
+}

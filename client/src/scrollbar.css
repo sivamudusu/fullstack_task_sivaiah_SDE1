@@ -1,0 +1,29 @@
+/* Custom scrollbar styling using theme variables */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: var(--color-scrollbar-track);
+    border-radius: var(--border-radius-full);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--color-scrollbar-thumb);
+    border-radius: var(--border-radius-full);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--color-scrollbar-thumb-hover);
+}
+
+/* Hide scrollbar buttons (arrows) */
+.custom-scrollbar::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* Firefox scrollbar styling */
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-scrollbar-thumb) var(--color-scrollbar-track);
+}
