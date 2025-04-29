@@ -12,7 +12,7 @@ Before running the application, make sure you have the following installed:
 1. Clone the repository
 
 ```bash
-git clone https://github.com/sivamudusu/fullstack_task_sivaiah.git
+git clone https://github.com/sivamudusu/fullstack_task_sivaiah_SDE1.git
 ```
 2. Go to the project directory and install dependencies for both the client and backend
 
